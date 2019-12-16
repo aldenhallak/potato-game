@@ -1,0 +1,117 @@
+<html>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href = "style.css">
+  
+  <div class = "row">
+    <div class = "column">
+        <button onclick = "reset()">
+      reset button
+    </button>
+  <span id = "stage0">
+
+    Stage: <div id = "stage"> </div> 
+    Goal: <div id = "goal"> </div>
+  </span>
+<span id = "stage1"> Potatoes: <div id = "potatoCount"></div>  Stomach Content: <div id = "hunger"></div> 	<button id = "getPotato" onclick = "getPotato();">make 1 potato</button>
+  <button id = "eatPotato" onclick = "eatPotato();"> eat potato </button>
+</span>
+	<span id = "stage2"> Money: <div id = "moneyCount"></div> Market Rate / Perceived Value: <div id = "marketRate"></div> 	<button id = "sellPotato" onclick = "sellPotato();">sell 1 potato to <div id ="randomName3">
+    </div></button>
+ </span>
+	<span id = "stage3"> Potato Getters <div id = "potatoGetters"></div> Potato Sellers: <div id = "potatoSellers"></div>	<button id = "buyPotatoGetter" onclick = "buy('potatoGetters');">Buy a person by the name of <div id = "randomName1"> </div> who gets potatoes for <div id = "potatoGettersCost">
+    
+    </div></button>
+	<button id = "buyPotatoSeller" onclick = "buy('potatoSellers');">Buy a person by the name of <div id = "randomName2"> </div> who sells potatoes for <div id = "potatoSellersCost">
+    
+    </div></button>
+ </span>
+<span id = "stage4">
+  	<button id = "increaseMarketRate" onclick = "buy('marketRate');">Make people really, really want potatoes. for <div id = "marketRateCost">
+      
+      </div></button>
+  
+    
+    <button id = "getRecruiters" onclick = "specialEvent('getRecruiters')"> Get a recruiters to take care of hiring people for you! <div id = "getRecruitersCost">
+    
+    </div> </button>
+
+  
+</span>
+
+<span id = "stage5">
+  
+  <button id = "billowsFeedingMachine" onclick = "specialEvent('billowsFeedingMachine')"> Buy Billows Feeder for <div id = "billowsFeedingMachineCost">
+    
+    </div></button>
+  <button id = "billowsFeedingMachineTrickleDown" onclick = "specialEvent('billowsFeedingMachineTrickleDown')"> Automate The Billows Feeder for your workers for <div id = "billowsFeedingMachineTrickleDownCost">
+    
+    </div> </button>
+  
+    <button id = "automateWorkers" onclick = "specialEvent('automateWorkers')">  Automate your workers for <div id = "automateWorkersCost">
+    
+    </div>
+  </button>
+  <button id = "alcoholism" onclick = "specialEvent('alcoholism')"> Targeted Vodka Advertising for <div id = "alcoholismCost">
+    
+    </div> </button>
+  <button id = "potatoCoin" onclick = "specialEvent('potatoCoin')"> Create a potato-based crypto currency for <div id = "potatoCoinCost">
+    
+    </div>
+  </button>
+  <button id = "timeMachine" onclick = "specialEvent('timeMachine')"> Time Machine for <div id = "timeMachineCost">
+    
+    </div></button>
+  
+    <button id = "potatoGovernment" onclick = "specialEvent('potatoGovernment')"> Buy lobbyists and also politicans <div id = "potatoGovernmentCost">
+    
+    </div>
+  </button>
+</span>
+  
+  <span id = "stage6">
+    
+    Welcome to the Time Machine! What would you like to do?
+    
+    <button id = "buyFuture" onclick = "buy('future')">
+      Go into the future by a day and reap the profts, for <div id = "futureCost">
+      </div>
+    </button>
+    
+    <button id = "openPortal1849" onclick ="specialEvent('openPortal1849')">
+      Open a time portal to 1849, for <div id = "openPortal1849Cost">
+      
+      </div>
+    </button>
+    
+    <button id = "openPortal2500BC" onclick = "specialEvent('openPortal2500BC')">
+      Open a time portal to 2500BC, for <div id = "openPortal2500BCCost">
+      </div>
+    </button>
+  
+  </span>
+      
+      <span id = "stage7"> 
+        
+        <button>
+          It was never about being hungry for you was it? It was only ever about getting more PotatoCoins. You don't care about anything else. You just like seeing the number go up. This button does nothing. The game is over. Feel free to get as many coins as you want. I hope it makes you happy.
+        </button>
+      
+      </span>
+        
+    </div>
+    <div id = "awards" class = "column2">
+           AWARDS!
+      
+      <ul id = "awardList">
+        
+      </ul>
+            
+      </div>  
+  </div>
+    
+	<script src = "app.js"></script>
+</html>
